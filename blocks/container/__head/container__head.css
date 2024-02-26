@@ -1,0 +1,14 @@
+.container__head{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin: 27px 15px 43px;
+}
+
+@media screen and (max-width:555px){
+    .container__head{
+        font-size: 24px;
+    }
+}

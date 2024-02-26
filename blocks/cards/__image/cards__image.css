@@ -1,0 +1,26 @@
+.cards__image{
+    object-fit: cover;
+    object-position: top;
+    width: 280px;
+    height: 324px;
+}
+
+@media screen and (max-width:1235px){
+    .cards__image{
+        width: 216px;
+        height: 281px;
+    }
+}
+
+@media screen and (max-width:975px){
+    .cards__image{
+        width: 223px;
+        height: 256px;
+    }
+}
+
+@media screen and (max-width:555px){
+    .cards__image{
+        width: 100%;
+    }
+}

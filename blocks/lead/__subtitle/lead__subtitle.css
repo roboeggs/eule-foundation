@@ -1,0 +1,14 @@
+.lead__subtitle{
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+@media screen and (max-width:360px){
+    .lead__subtitle{
+        font-size: 14px;
+    }
+}

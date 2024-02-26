@@ -1,0 +1,17 @@
+.collection__title{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+    margin: 0 0 38px;
+    text-align: center;
+}
+
+@media screen and (max-width:670px){
+    .collection__title{
+        font-size: 24px;
+        margin-bottom: 17px;
+    }
+}

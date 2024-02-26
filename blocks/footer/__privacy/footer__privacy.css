@@ -1,0 +1,11 @@
+.footer__privacy{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0;
+}
+
+@media screen and (max-width:1020px){
+    .footer__privacy{
+        grid-column-end: 3;
+    }
+}
