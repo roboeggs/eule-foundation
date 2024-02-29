@@ -1,0 +1,9 @@
+.article__grid{
+    /* position: relative; */
+    /* bottom: 230px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 48px 40px;
+    margin: 35px 50px;
+}
