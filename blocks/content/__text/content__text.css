@@ -1,4 +1,16 @@
 .content__text{
     padding: 0 50px;
-    margin: 165px 0 45px;
+    margin: 45px 0;
+}
+
+@media screen and (max-width: 769px){
+    .content__text{
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 555px){
+    .content__text{
+        padding: 0 15px;
+    }
 }

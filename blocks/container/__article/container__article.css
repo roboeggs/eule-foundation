@@ -3,5 +3,15 @@
     height: 315px;
     /* margin-top: 10px; */
     position: relative;
-    top: 130px;
+    top: 25px;
+}
+
+@media screen and (max-width: 769px){
+    .container__article{
+        width: 150px;
+        height: 150px;
+    }
+}
+* {
+    border: 1px solid red;
 }

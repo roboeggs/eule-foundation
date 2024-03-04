@@ -4,3 +4,9 @@
     margin: 0;
     /* padding: 0 30px; */
 }
+
+@media screen and (max-width:555px){
+    .content__header{
+        font-size: 26px;
+    }
+}
