@@ -34,7 +34,6 @@
 
 @import url(../blocks/slider/slider.css);
 @import url(../blocks/slider/__title/slider__title.css);
-@import url(../blocks/slider/__subtitle/slider__subtitle.css);
 
 @import url(../blocks/collection/collection.css);
 @import url(../blocks/collection/__title/collection__title.css);

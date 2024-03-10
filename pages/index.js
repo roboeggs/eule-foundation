@@ -1,5 +1,4 @@
-// import Card from '../components/Card.js';
-const messageListRu = [{
+const messageList = [{
     image: './images/cards/scientist.jpg',
     text: 'Support of scientists',
     description: 'A scientist with a screen'
@@ -21,75 +20,53 @@ const messageListRu = [{
   },
 ];
 
-const messageListEn = [{
-  image: './images/cards/circli.jpg',
-  text: 'Tire fitting of any complexity',
-  description: 'Wheel'
-  },
-  {
-    image: './../images/cards/engine.jpg',
-    text: 'Maintenance',
-    description: 'Motor under the hood'
-  },
-  {
-    image: './../images/cards/filter.jpg',
-    text: 'Changing all fluids and filters',
-    description: 'Filters and oils'
-  },
-  {
-    image: './../images/cards/chassis.jpg',
-    text: 'Running gear repair',
-    description: 'Wheel view from below'
-  },
-];
-
 
 class Card {
-    // в конструкторе будут динамические данные,
-    // для каждого экземпляра свои
+    // The constructor will receive dynamic data,
+    // each instance will have its own data
     constructor(text, image, description) {
-        // text и image — приватные поля, 
-        // они нужны только внутри класса
+        // text and image are private fields,
+        // they are needed only inside the class
         this._text = text;
         this._image = image;
         this._description = description;
     }
 
     _getTemplate() {
-        // забираем разметку из HTML и клонируем элемент
+          // Retrieve markup from HTML and clone the element
           const cardElement = document
           .querySelector('.template-cards')
           .content
           .querySelector('.cards__item')
           .cloneNode(true);
           
-        // вернём DOM-элемент карточки
+        // Return the card DOM element
           return cardElement;
     } 
     generateCard() {
-    // Запишем разметку в приватное поле _element. 
-    // Так у других элементов появится доступ к ней.
+    // Write the markup to the private field _element.
+    // This will allow other elements to access it.
     this._element = this._getTemplate();
     this._img  = this._element.querySelector('.cards__image');
     
-    // Добавим данные
+    // Add data
     this._img.alt = this._description
     this._img.src = this._image;
     this._element.querySelector('.cards__description').textContent = this._text;
     
-    // Вернём элемент наружу
+    // Return the element outside
     return this._element;
     } 
 }
 
 
-messageListRu.forEach((item) => {
-    // Создадим экземпляр карточки
+messageList.forEach((item) => {
+     // Create a card instance
     const card = new Card(item.text, item.image, item.description);
-    // Создаём карточку и возвращаем наружу
+    // Generate the card and return it
     const cardElement = card.generateCard();
   
-    // Добавляем в DOM
+    // Append to the DOM
     document.querySelector('.cards').append(cardElement);
   }); 
 

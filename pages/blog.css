@@ -50,10 +50,6 @@
 @import url(../blocks/collection/__arrow-right/collection__arrow-right.css);
 @import url(../blocks/arrow/arrow.css);
 
-@import url(../blocks/cards/cards.css);
-@import url(../blocks/cards/__item/cards__item.css);
-@import url(../blocks/cards/__image/cards__image.css);
-@import url(../blocks/cards/__description/cards__description.css);
 @import url(../blocks/collection/__arrow/collection__arrow.css);
 
 @import url(../blocks/container/container.css);
