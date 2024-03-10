@@ -1,4 +1,12 @@
 .flip-box__image{
     width: 380px;
     height: 380px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px){
+    .flip-box__image{
+        width: 216px;
+        height: 216px
+    }
 }

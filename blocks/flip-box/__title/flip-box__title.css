@@ -1,0 +1,11 @@
+.flip-box__title{
+    font-size: 28px;
+    margin: 40px 20px 0;
+}
+
+@media screen and (max-width: 1024px){
+    .flip-box__title{
+        margin: 10px 10px 0;
+        font-size: 18px;
+    }
+}

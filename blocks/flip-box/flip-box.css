@@ -6,3 +6,10 @@
     perspective: 1000px;
 }
 
+@media screen and (max-width: 1024px){
+    .flip-box{
+        width: 216px;
+        height: 216px;
+    }
+}
+
