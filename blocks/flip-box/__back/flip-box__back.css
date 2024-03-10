@@ -1,0 +1,5 @@
+.flip-box__back{
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+}

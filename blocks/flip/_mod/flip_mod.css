@@ -1,0 +1,7 @@
+.flip_mod:hover .flip_mod{
+    transform: rotateY(180deg);
+}
+
+/* .flip-box:hover .flip-box__inner {
+    transform: rotateY(180deg);
+  } */
